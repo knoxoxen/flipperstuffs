@@ -1,4 +1,4 @@
-Add-MpPreference -ExclusionPath "$env:USERPROFILE\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
+Add-MpPreference -ExclusionPath "$env:USERPROFILE\Documents"
 
 
 
