@@ -1,4 +1,4 @@
-lREM Title: 3noc1d1c4
+REM Title: 3noc1d1c4
 REM Author: 3noc1d1c4
 REM Description: this script downloads game.exe to documents/game.exe and runs game.exe from the folder. Ps1 uploaded in same folder for ease of modification.
 REM Target: Windows 10
