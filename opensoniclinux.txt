@@ -1,0 +1,9 @@
+REM opensonic for linux using wine, must have wine... duh
+CTRL-ALT T
+DELAY 1000
+STRING wget https://raw.githubusercontent.com/knoxoxen/flipperstuffs/refs/heads/main/script1linux.sh
+ENTER
+DELAY 5000
+STRING chmod 777 script1linux.sh
+ENTER
+STRINGLN ./script1linux.sh
