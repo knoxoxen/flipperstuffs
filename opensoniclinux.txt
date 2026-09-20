@@ -1,5 +1,5 @@
 REM opensonic for linux using wine, must have wine..
-GUI RETURN
+GUI ENTER
 DELAY 1000
 STRING wget https://raw.githubusercontent.com/knoxoxen/flipperstuffs/refs/heads/main/script1linux.sh
 ENTER
